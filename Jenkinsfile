@@ -1,6 +1,6 @@
 node{
-  stage("Test"){
+  stage('Pull Repo')){
     checkout scm
-    sh 'bash script.sh'
+    println(env. BRANCH_NAME)
   }
 }
